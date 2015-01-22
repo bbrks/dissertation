@@ -1,0 +1,3 @@
+[submodule "AWESOME"]
+	path = AWESOME
+	url = git@github.com:bbrks/AWESOME.git

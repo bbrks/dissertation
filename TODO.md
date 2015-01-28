@@ -13,5 +13,8 @@
 - [ ] Look into automated scanning for vulnerabilities
   - [ ] Set up unit testing too?
 
+## Spike Work
+- [ ] Travis CI
+
 ## Codebase Improvements
 - [ ] Change mysql and tidy_sql to use PDO

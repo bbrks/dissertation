@@ -1,8 +1,8 @@
 # Todo list
 
-## Report
+## Outline Project Specification
 - [ ] Tweak LaTeX style file
-- [ ] Write project outline report
+- [ ] Write report
   - [ ] Project Description
   - [ ] Proposed Tasks
   - [ ] Project Deliverables

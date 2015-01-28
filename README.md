@@ -5,3 +5,5 @@ AWESOME is a web-based module evaluation questionnaire generator for the monitor
 
 # Devblog
 http://diss.bbrks.me
+
+![Latest post from the Devblog](http://dev.bbrks.me/feedimg/)

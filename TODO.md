@@ -25,6 +25,7 @@
 ## Codebase Improvements
 - [ ] Change MySQL and tidy_sql to use PDO
 - [ ] **Change procedural design to OOP design** *(this is a huuuge one!)*
+- [ ] **Database is not relational**, does not use foreign keys!!
 - [ ] Remove Twig dependency?
 - [ ] Login functionality
 - [ ] Polished analytics/reports

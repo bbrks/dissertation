@@ -8,4 +8,4 @@ http://diss.bbrks.me
 
 Latest Post:
 
-[![Latest post from the Devblog](http://dev.bbrks.me/feedimg/image.php?url=http://diss.bbrks.me/feed)](http://diss.bbrks.me)
+[<img src="http://dev.bbrks.me/feedimg/image.php?url=diss.bbrks.me/feed&scale=2" height="65px" />](http://diss.bbrks.me)

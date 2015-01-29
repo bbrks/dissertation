@@ -1,5 +1,9 @@
 # Todo list
 
+## Immediate concerns
+- [x] Create Git tag at starting point to diff between
+- [ ] Create list of changes to send to Hannah
+
 ## Outline Project Specification
 - [ ] Tweak LaTeX style file
 - [ ] Write report
@@ -17,4 +21,5 @@
 - [ ] Travis CI
 
 ## Codebase Improvements
-- [ ] Change mysql and tidy_sql to use PDO
+- [ ] Change MySQL and tidy_sql to use PDO
+- [ ] Remove Twig dependency?

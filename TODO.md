@@ -18,8 +18,16 @@
   - [ ] Set up unit testing too?
 
 ## Spike Work
-- [ ] Travis CI
+- [ ] Travis CI - Automated and continuous integration
+  - [ ] PHP Unit - Automated unit testing
+  - [ ] PHP CodeSniffer - Automated vulnerability scanning
 
 ## Codebase Improvements
 - [ ] Change MySQL and tidy_sql to use PDO
+- [ ] **Change procedural design to OOP design** *(this is a huuuge one!)*
 - [ ] Remove Twig dependency?
+- [ ] Login functionality
+- [ ] Polished analytics/reports
+
+## Future Considerations
+- [ ] Traffic light module/dept dashboard

@@ -18,19 +18,19 @@
 
 ## Codebase Improvements
 
-### Short term
+#### Short term
 - [ ] **Change procedural design to OO MVC** *(this is a huuuge one!)*
 - [ ] Change MySQL and tidy_sql to use PDO
 - [ ] Login functionality
 - [ ] Set up TravisCI for unit tests
 
-### Long term
+#### Long term
 - [ ] Polished analytics/reports
 - [ ] extensible i18n system
 - [ ] accessibility audit
 - [ ] Make database relational *(foreign keys etc)*
 
-### Future Considerations
+#### Future Considerations
 - [ ] Traffic light module/dept dashboard
 
 ## Spike Work

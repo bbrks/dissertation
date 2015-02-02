@@ -1,0 +1,92 @@
+\documentclass[11pt,fleqn,twoside]{article}
+\usepackage{makeidx}
+\makeindex
+\usepackage{palatino} %or {times} etc
+\usepackage{plain} %bibliography style 
+\usepackage{amsmath} %math fonts - just in case
+\usepackage{amsfonts} %math fonts
+\usepackage{amssymb} %math fonts
+\usepackage{lastpage} %for footer page numbers
+\usepackage{fancyhdr} %header and footer package
+\usepackage{mmpv2} 
+\usepackage{url}
+
+% the following packages are used for citations - You only need to include one. 
+%
+% Use the cite package if you are using the numeric style (e.g. IEEEannot). 
+% Use the natbib package if you are using the author-date style (e.g. authordate2annot). 
+% Only use one of these and comment out the other one. 
+\usepackage{cite}
+%\usepackage{natbib}
+
+\begin{document}
+
+\name{Benjamin Brooks}
+\userid{beb12}
+\projecttitle{Aberystwyth Web Evaluation \\ Surveys Of Module Experiences \\ \textit{(AWESOME)}}
+\projecttitlememoir{\textit{AWESOME}} %same as the project title or abridged version for page header
+\reporttitle{Outline Project Specification}
+\version{0.1}
+\docstatus{Draft}
+\modulecode{CS39440}
+\degreeschemecode{G401}
+\degreeschemename{Computer Science}
+\supervisor{Hannah Dee} % e.g. Neil Taylor
+\supervisorid{hmd1}
+\wordcount{}
+
+%optional - comment out next line to use current date for the document
+%\documentdate{6th February 2015} 
+\mmp
+
+\setcounter{tocdepth}{3} %set required number of level in table of contents
+
+
+%==============================================================================
+\section{Project description}
+%==============================================================================
+%  - Main substance of the project
+%  - Those aspects that are essential in making it worthwhile
+%  - The end goals of the project
+
+
+
+%==============================================================================
+\section{Proposed tasks}
+%==============================================================================
+%  - Summarise tasks that will form the major part of work
+%    - Lots of research reading
+%    - Coding techniques to learn, APIs, etc.
+%  - List of tasks you should focus on the major items of work
+
+
+
+%==============================================================================
+\section{Project deliverables}
+%==============================================================================
+%  - List all key outputs during project
+%    - Specified items of working software
+%    - Any reviews that you see as fundamental importance to project
+%    - Documentation for requirements, design and testing
+%    - final report
+%  - Explain these items and highlight when they will be produced
+%  - Take into account your progress
+
+
+
+%==============================================================================
+% BIBLIOGRAPHY
+%==============================================================================
+\nocite{*} % include everything from the bibliography, irrespective of whether it has been referenced.
+
+% the following line is included so that the bibliography is also shown in the table of contents. There is the possibility that this is added to the previous page for the bibliography. To address this, a newline is added so that it appears on the first page for the bibliography. 
+\newpage
+\addcontentsline{toc}{section}{Initial Annotated Bibliography} 
+
+% example of including an annotated bibliography. The current style is an author date one. If you want to change, comment out the line and uncomment the subsequent line. You should also modify the packages included at the top (see the notes earlier in the file) and then trash your aux files and re-run. 
+%\bibliographystyle{authordate2annot}
+\bibliographystyle{IEEEannot}
+\renewcommand{\refname}{Annotated Bibliography}  % if you put text into the final {} on this line, you will get an extra title, e.g. References. This isn't necessary for the outline project specification. 
+\bibliography{mmp} % References file
+
+\end{document}

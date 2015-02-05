@@ -11,6 +11,8 @@
 \usepackage{mmpv2} 
 \usepackage{url}
 
+\usepackage{enumitem}
+
 % the following packages are used for citations - You only need to include one. 
 %
 % Use the cite package if you are using the numeric style (e.g. IEEEannot). 
@@ -49,7 +51,18 @@
 %  - Those aspects that are essential in making it worthwhile
 %  - The end goals of the project
 
+The Aberystwyth Web Evaluation Surveys Of Module Experiences (AWESOME), is primarily a tool that enables departments to gather feedback by students about modules, lecturers, and other departmental issues.
+It is intended to replace and improve upon the current method of collecting feedback via Google Forms.
+This can be achieved by providing a personalised survey for each student to make questions personalised whilst also keeping results anonymous and confidential, and being able to chase up students for not answering.
 
+Advanced analytics and reports is also a feature which is highly requested by university management.
+For example, the system needs to be able to extract textual comments from the worst performing modules containing the word `Feedback'.
+This can help upper management identify problematic areas in the university and look into the issue further.
+
+AWESOME is a PHP web application developed by Keiron O'Shea during the summer of 2014 under the supervision of Dr.~Hannah Dee.
+This project's goal is to bring the current prototype up to a functioning, implementable, and extensible standard.
+Security of the system is critical, and so implementing a continuous integration system with unit tests and vulnerability scanning is vital to get up and running early on in the project.
+Additionally, the system must be multilingual and accessible to adhere to the university's policies.
 
 %==============================================================================
 \section{Proposed tasks}
@@ -58,6 +71,34 @@
 %    - Lots of research reading
 %    - Coding techniques to learn, APIs, etc.
 %  - List of tasks you should focus on the major items of work
+
+The project is currently written in procedural PHP, using Twig\cite{Twig} as a templating engine.
+In order to make the program more extensible and easier to maintain, it would make sense to refactor the current codebase to follow an object oriented (OOP) model-view-controller (MVC)\cite{PHPMVC} architectural pattern.
+
+The number one priority on this project is to do a security audit on the software currently as it stands and a sanity check on the logic behind it.
+After this, the design of the OOP MVC version of the software can begin as well as the other tasks listed.
+
+\subsection{Short Term Tasks}
+\begin{description}[itemsep=-0.25em,itemindent=-2em,leftmargin=4em]
+	\item[Change procedural design] -- Design a new software architecture using MVC with OOP.
+	\item[PHP Data Objects (PDO)] -- Change the current mysqli and tidy\_sql implementation to use PDO for greater security, flexibility and features when interacting with databases.
+	\item[Protect admin dashboard] -- Using LDAP HTTP authentication via .htaccess
+	\item[Unit Testing] -- Use Travis CI\cite{TravisCI} to do automated unit testing and vulnerability scanning
+\end{description}
+
+\subsection{Long Term Tasks}
+\begin{description}[itemsep=-0.25em,itemindent=-2em,leftmargin=4em]
+	\item[Analytics/Reports] -- Create a system which can narrow down responses to criteria (e.g. Find modules with a low satisfaction score which mention `feedback' in comments)
+	\item[Internationalisation (i18n)] -- Reimplement i18n system to support additional languages.
+	\item[Accessibility (a11y)] -- Ensure all student-facing pages are accessible for disabled users.
+	\item[Relational Database] -- Modify the database schema to be object oriented and relational.
+\end{description}
+
+
+\subsection{Future Considerations}
+\begin{description}[itemsep=-0.25em,itemindent=-2em,leftmargin=4em]
+	\item[Traffic Light Dashboard] -- Have a dashboard showing traffic lights for all modules and departments to detect current issues.
+\end{description}
 
 
 

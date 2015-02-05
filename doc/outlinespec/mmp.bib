@@ -1,67 +1,178 @@
 
 % This is an example of a string: this is the way you do variables in BiBTex
 % @string{variable_name="string the variable_name refers to"}
-@string{aij= "Artificial Intelligence"}
+%@string{aij= "Artificial Intelligence"}
 
-
-% This is an example of a book. By putting the title in {{ double brackets,
-% capitalisation is preserved.
-
-@book{NumericalRecipes,
-  title={{Numerical recipes in C}},
-  author={Press, W.H. and others},
-  year={1992},
-  publisher={Cambridge University Press Cambridge},
-  isbn={0123456789},
-  pages = {349--361},
-  annote={This is my annotation. I can add in comments that are in \textbf{bold} and \em{italics} and then other content.},
+@MISC{TravisCI,
+author = {},
+title = {{Travis CI}},
+month = Feb,
+year = {2015},
+howpublished={\url{https://travis-ci.org}},
+note={Accessed Feb 2015},
+annote={Travis CI is a hosted continous integration system that connects to GitHub to help with automated unit testing and vulnerability scanning.}
 }
 
-
-% This is an example of a conference paper. Note the accented character in the 
-% author list.  Again, capitalisation of the title is important so it is in
-% double brackets 
-@INPROCEEDINGS{MarksPaper,
-    author = {Mark Neal and Jan Feyereisl and Rosario Rascun\`{a} and Xiaolei Wang},
-    title = {{Don't touch me, I'm fine: Robot autonomy using an artificial innate immune system}}, 
-    booktitle = {Proceedings of the 5th International Conference on Artificial Immune Systems},
-    year = {2006},
-    pages = {349--361},
-    publisher = {Springer},
-    annote={This paper...}
+@MISC{Twig,
+author = {},
+title = {{Twig - The flexible, fast, and secure template engine for PHP}},
+month = Feb,
+year = {2015},
+howpublished={\url{http://twig.sensiolabs.org}},
+note={Accessed Feb 2015},
+annote={Twig is the templating engine using by Keiron}
 }
 
-% This is an example of a journal article. We use the variable defined at the
-% top here - by typing aij, we get Artificial Intelligence journal title 
-% without having to type it out
-@article{HannahsPaper,
- author={Dee, H. M. and Hogg, D. C.},
- title={Navigational strategies in behaviour modelling},
- year=2009,
- journal=aij, 
- volume={173(2)}, 
- pages={329-342},
-  annote={This is my annotation. I should add in a description here.}
+@MISC{PHPMVC,
+author = {Joe Stump},
+title = {{Understanding MVC in PHP}},
+month = Feb,
+year = {2015},
+howpublished={\url{http://archive.oreilly.com/pub/a/php/archive/mvc-intro.html}},
+annote={}
 }
 
-% This is an example of a URL reference
-% Note you should try to identify authorship of web resources
-% Also note you should include the date you last accessed the page.
-@MISC{FailBlog,
-author = {Various},
-title = {Fail Blog},
-month = Aug,
-year = {2011},
-howpublished={\url{http://www.failblog.org/}},
-note={Accessed August 2011},
-annote={This is my annotation. I should add in a description here.}
+@article{1993,
+    abstract = {{Literature on feedback in the fields of education, psychology, and organizational behavior was reviewed and analyzed in order to determine effective practice. Thirty-two effective practices were uncovered in the literature; three additional practices are offered from the author's experience as a practitioner.}},
+    author = {Brinko, Kathleen T.},
+    citeulike-article-id = {13507600},
+    citeulike-linkout-0 = {http://www.uky.edu/\~{}gmswan3/575/brinko\_1993.pdf},
+    citeulike-linkout-1 = {http://www.jstor.org/stable/2959994},
+    journal = {The Journal of Higher Education},
+    keywords = {mmp},
+    number = {5},
+    posted-at = {2015-02-03 13:38:14},
+    priority = {2},
+    publisher = {Ohio State University Press},
+    title = {{The Practice of Giving Feedback to Improve Teaching: What Is Effective?}},
+    url = {http://www.jstor.org/stable/2959994},
+    volume = {64},
+    year = {1993}
 }
 
-@misc{kittenpic_ref,
-  author="Sylvia Duckworth",
- title={{A picture of a kitten at Hellifield Peel}},
- howpublished={\url{http://www.geograph.org.uk/photo/640959}},
- year=2007,
- note={Copyright Sylvia Duckworth and licensed for reuse under a Creative Commons Attribution-Share Alike 2.0 Generic Licence. Accessed August 2011},
-  annote={This is my annotation. I should add in a description here.}
+@incollection{citeulike:2348356,
+    abstract = {{Students' evaluations of teaching effectiveness (SETs) have been the topic of considerable interest and a great deal of research in North America and, increasingly, universities all over the world. Research reviewed here indicated that SETs are:}},
+    author = {Marsh, HerbertW},
+    booktitle = {The Scholarship of Teaching and Learning in Higher Education: An Evidence-Based Perspective},
+    citeulike-article-id = {2348356},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1007/1-4020-5742-3\_9},
+    citeulike-linkout-1 = {http://link.springer.com/chapter/10.1007/1-4020-5742-3\_9},
+    doi = {10.1007/1-4020-5742-3\_9},
+    editor = {Perry, RaymondP and Smart, JohnC},
+    journal = {The Scholarship of Teaching and Learning in Higher Education: An Evidence-Based Perspective},
+    keywords = {mmp},
+    pages = {319--383},
+    posted-at = {2015-02-03 13:32:50},
+    priority = {2},
+    publisher = {Springer Netherlands},
+    title = {{Students' Evaluations of University Teaching: Dimensionality, Reliability, Validity, Potential Biases and Usefulness}},
+    url = {http://dx.doi.org/10.1007/1-4020-5742-3\_9},
+    year = {2007}
+}
+
+@article{citeulike:11837547,
+    author = {Marsh, Herbert W.},
+    citeulike-article-id = {11837547},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1016/0883-0355(87)90001-2},
+    doi = {10.1016/0883-0355(87)90001-2},
+    issn = {08830355},
+    journal = {International Journal of Educational Research},
+    keywords = {mmp},
+    month = jan,
+    number = {3},
+    pages = {253--388},
+    posted-at = {2015-02-03 13:30:33},
+    priority = {2},
+    title = {{Students' evaluations of University teaching: Research findings, methodological issues, and directions for future research}},
+    url = {http://dx.doi.org/10.1016/0883-0355(87)90001-2},
+    volume = {11},
+    year = {1987}
+}
+
+@article{citeulike:7537277,
+    abstract = {{ABSTRACT This paper presents a brief review of the existing research on student written evaluations of the teaching performance of college and university instructors. First, a short historical background is given. Next, arguments are presented which have been advanced for and against the use of student written evaluations as a valid indicator of teaching effectiveness, followed by a discussion of various background characteristics which have been thought to influence student ratings. Student and faculty reaction to the use of student ratings is discussed, and finally suggestions for further investigation are given.}},
+    author = {Wachtel, Howard K.},
+    citeulike-article-id = {7537277},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1080/0260293980230207},
+    citeulike-linkout-1 = {http://www.tandfonline.com/doi/abs/10.1080/0260293980230207},
+    day = {1},
+    doi = {10.1080/0260293980230207},
+    journal = {Assessment \& Evaluation in Higher Education},
+    keywords = {mmp},
+    month = jan,
+    number = {2},
+    pages = {191--212},
+    posted-at = {2015-02-03 13:20:06},
+    priority = {2},
+    publisher = {Routledge},
+    title = {{Student Evaluation of College Teaching Effectiveness: a brief review}},
+    url = {http://dx.doi.org/10.1080/0260293980230207},
+    volume = {23},
+    year = {1998}
+}
+
+@article{citeulike:13507579,
+    abstract = {{An investigation was conducted into 3- or 4-year departmental sets of student feedback questionnaire data from one university. Only four out of 25 departments had significant changes to any of the six dimensions in the 3- or 4-year period, and three of these significant changes were falls. There is, therefore, no evidence that the use of the questionnaire was making any contribution to improving the overall quality of teaching and learning of the departments, at least as perceived by the students. If it was, there should have been evidence of rising values. The following reasons why the use of the questionnaire might not have been conducive to improving teaching quality are discussed. The possibility that teaching quality is inherently stable is rejected. It is possible that feedback from the questionnaire was not used effectively. Related to this is whether instructors perceived that the university rewarded good teaching, so felt there was an incentive to make use of the feedback. The emphasis of the system was on appraisal, which might negate any developmental effect. The standard questionnaire and the associated procedures may have lacked flexibility and been inappropriate for innovative forms of teaching. The study questions whether student feedback questionnaires are utilising resources effectively if they are administered in an environment similar to the university in question, which appears reasonably typical.}},
+    author = {Kember, David and Leung, Doris Y. P. and Kwan, K. P.},
+    citeulike-article-id = {13507579},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1080/0260293022000009294},
+    citeulike-linkout-1 = {http://www.tandfonline.com/doi/abs/10.1080/0260293022000009294},
+    day = {1},
+    doi = {10.1080/0260293022000009294},
+    journal = {Assessment \& Evaluation in Higher Education},
+    keywords = {mmp},
+    month = sep,
+    number = {5},
+    pages = {411--425},
+    posted-at = {2015-02-03 13:18:01},
+    priority = {2},
+    publisher = {Routledge},
+    title = {{Does the Use of Student Feedback Questionnaires Improve the Overall Quality of Teaching?}},
+    url = {http://dx.doi.org/10.1080/0260293022000009294},
+    volume = {27},
+    year = {2002}
+}
+
+@article{citeulike:13507576,
+    abstract = {{This article applied meta-analytic methodology to integrate findings from 22 comparisons of the effectiveness of student-rating feedback at the college level. On the average, feedback had a modest but significant effect on improving instruction. Instructors receiving mid-semester feedback averaged. 16 of a rating point higher on end-of-semester overall ratings than did instructors receiving no mid-semester feedback. This corresponded to a gain of over one-third of a standard-deviation unit, or a percentile gain of 15 points. The effects of student-rating feedback were accentuated when augmentation or consultation accompanied the ratings. Other study features, such as the length of time available to implement changes and the use of normative data, did not produce different effect sizes.}},
+    author = {Cohen, PeterA},
+    booktitle = {Research in Higher Education},
+    citeulike-article-id = {13507576},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1007/bf00976252},
+    citeulike-linkout-1 = {http://link.springer.com/article/10.1007/BF00976252},
+    doi = {10.1007/bf00976252},
+    keywords = {mmp},
+    number = {4},
+    pages = {321--341},
+    posted-at = {2015-02-03 13:14:41},
+    priority = {2},
+    publisher = {Kluwer Academic Publishers},
+    title = {{Effectiveness of student-rating feedback for improving college instruction: A meta-analysis of findings}},
+    url = {http://dx.doi.org/10.1007/bf00976252},
+    volume = {13},
+    year = {1980}
+}
+
+@article{citeulike:13507564,
+    abstract = {{This review deals with the use of student ratings as feedback to teachers. Evidence suggests that differences in the source and nature of the feedback and in the attributes of feedback recipients partly explain the differential effect which feedback has on teachers. Issues associated with the research design of feedback studies are also surveyed. The review suggests the existence of a minimal effect at best of feedback on instructional improvement at the university level. Suggestions are offered for improving the nature of the feedback.}},
+    author = {Rotem, Arie and Glasman, Naftaly S.},
+    citeulike-article-id = {13507564},
+    citeulike-linkout-0 = {http://dx.doi.org/10.3102/00346543049003497},
+    citeulike-linkout-1 = {http://rer.sagepub.com/content/49/3/497.abstract},
+    citeulike-linkout-2 = {http://rer.sagepub.com/content/49/3/497.full.pdf},
+    day = {01},
+    doi = {10.3102/00346543049003497},
+    issn = {1935-1046},
+    journal = {Review of Educational Research},
+    keywords = {mmp},
+    month = sep,
+    number = {3},
+    pages = {497--511},
+    posted-at = {2015-02-03 12:57:10},
+    priority = {4},
+    publisher = {SAGE Publications},
+    title = {{On the Effectiveness of Students' Evaluative Feedback to University Instructors}},
+    url = {http://dx.doi.org/10.3102/00346543049003497},
+    volume = {49},
+    year = {1979}
 }

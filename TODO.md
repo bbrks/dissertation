@@ -21,7 +21,7 @@
 #### Short term
 - [ ] **Change procedural design to OO MVC** *(this is a huuuge one!)*
 - [ ] Change MySQL and tidy_sql to use PDO
-- [ ] Login functionality
+- [ ] Login functionality - .htaccess
 - [ ] Set up TravisCI for unit tests
 
 #### Long term

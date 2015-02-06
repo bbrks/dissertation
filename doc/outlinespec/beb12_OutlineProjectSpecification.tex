@@ -53,19 +53,19 @@
 
 The Aberystwyth Web Evaluation Surveys Of Module Experiences (AWESOME), is a prototype that enables departments to gather feedback by students about modules, lecturers, and other departmental issues.
 It is intended to replace and improve upon the current method of collecting feedback via Google Forms.
-This can be achieved by providing a personalised survey for each student to make questions personalised whilst also keeping results anonymous and confidential, and being able to chase up students for not answering.
-
-Advanced analytics and reports is also a feature which is highly requested by university management.
-For example, the system needs to be able to extract textual comments from the worst performing modules containing the word `Feedback'.
-This can help upper management identify problematic areas in the university and look into the issue further.
+This can be achieved by providing a personalised survey for each student to make questions personalised whilst also keeping results anonymous and confidential, and being able to chase up students for not completing their questionnaire.
 
 AWESOME is a PHP web application developed by Keiron O'Shea during the summer of 2014 under the supervision of Dr.~Hannah Dee.
 This project's goal is to bring the current prototype up to a well written, functioning, implementable, and extensible standard.
 Security of the system is critical, and so implementing a continuous integration system with unit tests and vulnerability scanning is vital to get up and running early on in the project.
 The system must be multilingual and accessible to adhere to the university's policies.
 
-Additionally the prototype has also been demoed at a Learning and Teaching Enhancement Committee meeting to gather feedback about the current status of the project.
-The consensus from the committee was that the prototype is very impressive and would solve a need that is longed for by the university management.
+Advanced analytics and reports is also a feature which is highly requested by university management.
+For example, the system needs to be able to extract textual comments from the worst performing modules containing the word `Feedback'.
+This can help upper management identify problematic areas in the university and look into the issue further.
+
+The prototype has been demoed at a Learning and Teaching Enhancement Committee meeting to gather feedback about the current status of the project.
+The consensus from the committee is that the prototype is very impressive and would solve a need that is longed for by the university management.
 This confirmation by the committee further proves a need for this software to follow best software development practices to ensure that it can be used and extended in the future.
 
 %==============================================================================
@@ -114,10 +114,15 @@ The following task lists are what can be expected of each aspect of the project.
 %  - Explain these items and highlight when they will be produced
 %  - Take into account your progress
 
+As this project has a fairly tight and fixed deadlight on the temperature questionnaire testing, a lot of the refactoring work will be done as soon and as quickly as possible in order to get the project to a state that could be used.
+
+After this initial sprint, the project can then be extended with the additional features described above.
+A rough outline of timeframes for deliverables is below.
+
 \begin{description}[itemindent=-2em,leftmargin=4em]
 	\item[Outline Project Specification] -- 2015-02-06 -- This document.
 	\item[OOP MVC Class Diagram] -- 2015-02-09 -- UML Class diagram to describe MVC design.
-	\item[OOP MVC Release] -- 2015-02-20 -- Functional OOP MVC version of the software.
+	\item[OOP MVC Release] -- 2015-02-20 -- Functional OOP MVC version of the prototype.
 	\item[i18n and a11y] -- 2015-02-24 -- Add internationalisation support and audit accessibility.
 	\item[Temperature Test] -- Week 4-5 -- Internal/closed functional testing.
 	\item[Temperature Questionnaire] -- Week 6 -- Questionnaire sent out to two departments.

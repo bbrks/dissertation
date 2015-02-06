@@ -9,7 +9,7 @@
 \usepackage{lastpage} %for footer page numbers
 \usepackage{fancyhdr} %header and footer package
 \usepackage{mmpv2} 
-\usepackage{url}
+\usepackage{hyperref}
 
 \usepackage{enumitem}
 
@@ -113,7 +113,9 @@ After this, the design of the OOP MVC version of the software can begin as well 
 %  - Explain these items and highlight when they will be produced
 %  - Take into account your progress
 
-
+\begin{description}[itemindent=-2em,leftmargin=4em]
+	\item[] -- 
+\end{description}
 
 %==============================================================================
 % BIBLIOGRAPHY
@@ -121,7 +123,7 @@ After this, the design of the OOP MVC version of the software can begin as well 
 \nocite{*} % include everything from the bibliography, irrespective of whether it has been referenced.
 
 % the following line is included so that the bibliography is also shown in the table of contents. There is the possibility that this is added to the previous page for the bibliography. To address this, a newline is added so that it appears on the first page for the bibliography. 
-\newpage
+%\newpage
 \addcontentsline{toc}{section}{Initial Annotated Bibliography} 
 
 % example of including an annotated bibliography. The current style is an author date one. If you want to change, comment out the line and uncomment the subsequent line. You should also modify the packages included at the top (see the notes earlier in the file) and then trash your aux files and re-run. 

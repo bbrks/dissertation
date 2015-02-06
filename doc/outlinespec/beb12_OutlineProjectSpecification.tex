@@ -28,8 +28,8 @@
 \projecttitle{Aberystwyth Web Evaluation \\ Surveys Of Module Experiences \\ \textit{(AWESOME)}}
 \projecttitlememoir{\textit{AWESOME}} %same as the project title or abridged version for page header
 \reporttitle{Outline Project Specification}
-\version{0.1}
-\docstatus{Draft}
+\version{1.0}
+\docstatus{Release}
 \modulecode{CS39440}
 \degreeschemecode{G401}
 \degreeschemename{Computer Science}
@@ -51,7 +51,7 @@
 %  - Those aspects that are essential in making it worthwhile
 %  - The end goals of the project
 
-The Aberystwyth Web Evaluation Surveys Of Module Experiences (AWESOME), is primarily a tool that enables departments to gather feedback by students about modules, lecturers, and other departmental issues.
+The Aberystwyth Web Evaluation Surveys Of Module Experiences (AWESOME), is a prototype that enables departments to gather feedback by students about modules, lecturers, and other departmental issues.
 It is intended to replace and improve upon the current method of collecting feedback via Google Forms.
 This can be achieved by providing a personalised survey for each student to make questions personalised whilst also keeping results anonymous and confidential, and being able to chase up students for not answering.
 
@@ -60,9 +60,13 @@ For example, the system needs to be able to extract textual comments from the wo
 This can help upper management identify problematic areas in the university and look into the issue further.
 
 AWESOME is a PHP web application developed by Keiron O'Shea during the summer of 2014 under the supervision of Dr.~Hannah Dee.
-This project's goal is to bring the current prototype up to a functioning, implementable, and extensible standard.
+This project's goal is to bring the current prototype up to a well written, functioning, implementable, and extensible standard.
 Security of the system is critical, and so implementing a continuous integration system with unit tests and vulnerability scanning is vital to get up and running early on in the project.
-Additionally, the system must be multilingual and accessible to adhere to the university's policies.
+The system must be multilingual and accessible to adhere to the university's policies.
+
+Additionally the prototype has also been demoed at a Learning and Teaching Enhancement Committee meeting to gather feedback about the current status of the project.
+The consensus from the committee was that the prototype is very impressive and would solve a need that is longed for by the university management.
+This confirmation by the committee further proves a need for this software to follow best software development practices to ensure that it can be used and extended in the future.
 
 %==============================================================================
 \section{Proposed tasks}
@@ -72,34 +76,31 @@ Additionally, the system must be multilingual and accessible to adhere to the un
 %    - Coding techniques to learn, APIs, etc.
 %  - List of tasks you should focus on the major items of work
 
-The project is currently written in procedural PHP, using Twig\cite{Twig} as a templating engine.
-In order to make the program more extensible and easier to maintain, it would make sense to refactor the current codebase to follow an object oriented (OOP) model-view-controller (MVC)\cite{PHPMVC} architectural pattern.
+The prototype is currently written in procedural PHP, using the Twig\cite{Twig} framework as a templating engine.
+In order to make the program more extensible and easier to maintain, it would make sense to refactor the current codebase to follow an object oriented (OOP) model-view-controller (MVC)\cite{PHPMVC2}\cite{PHPMVC} architectural pattern.
 
-The number one priority on this project is to do a security audit on the software currently as it stands and a sanity check on the logic behind it.
-After this, the design of the OOP MVC version of the software can begin as well as the other tasks listed.
+The first task that needs to happen is a full security audit of the current version of the prototype.
+From there, the project can be refactored using best software practices, such as OOP, unit testing and MVC to separate the view and logic.
 
-\subsection{Short Term Tasks}
-\begin{description}[itemsep=-0.25em,itemindent=-2em,leftmargin=4em]
+After the refactoring is done and the software is up to the same functional specification, additional functionality can then be introduced.
+The following task lists are what can be expected of each aspect of the project.
+
+\subsection{Refactoring tasks}
+\begin{description}[itemindent=-2em,leftmargin=4em]
 	\item[Change procedural design] -- Design a new software architecture using MVC with OOP.
 	\item[Unit Testing] -- Use Travis CI\cite{TravisCI} to do automated unit testing and vulnerability scanning.
-	\item[Protect admin dashboard] -- Using LDAP HTTP authentication via \emph{.htaccess}.
+	\item[Secure admin dashboard] -- Use LDAP HTTP authentication via \emph{.htaccess}.
 	\item[PHP Data Objects (PDO)] -- Change the current \emph{mysqli} and \emph{tidy\_sql} implementation to use PDO for greater security, flexibility and features when interacting with databases.
+	\item[Accessibility (a11y) audit] -- Ensure all student-facing pages are accessible for disabled users.
 \end{description}
 
-\subsection{Long Term Tasks}
-\begin{description}[itemsep=-0.25em,itemindent=-2em,leftmargin=4em]
+\subsection{Additional Functionality}
+\begin{description}[itemindent=-2em,leftmargin=4em]
 	\item[Internationalisation (i18n)] -- Reimplement i18n system to support additional languages.
-	\item[Accessibility (a11y)] -- Ensure all student-facing pages are accessible for disabled users.
 	\item[Relational Database] -- Modify the database schema to be object oriented and relational.
-	\item[Analytics/Reports] -- Create a system which can narrow down responses to criteria (e.g. Find modules with a low satisfaction score which mention `feedback' in comments)
-\end{description}
-
-
-\subsection{Future Considerations}
-\begin{description}[itemsep=-0.25em,itemindent=-2em,leftmargin=4em]
+	\item[Advanced Analytics] -- Create a system which can narrow down responses to criteria (e.g. Find modules with a low satisfaction score which mention `feedback' in comments)
 	\item[Traffic Light Dashboard] -- Have a dashboard showing traffic lights for all modules and departments to detect current issues.
 \end{description}
-
 
 
 %==============================================================================
@@ -113,16 +114,15 @@ After this, the design of the OOP MVC version of the software can begin as well 
 %  - Explain these items and highlight when they will be produced
 %  - Take into account your progress
 
-% TODO: Testing Dates
 \begin{description}[itemindent=-2em,leftmargin=4em]
-	\item[TODO: Temperature Test] -- 2015-03 -- Internal/closed functional testing.
-	\item[TODO: Temperature Questionnaire] -- 2015-03 -- Questionnaire sent out to two departments.
-	\item[--]
 	\item[Outline Project Specification] -- 2015-02-06 -- This document.
 	\item[OOP MVC Class Diagram] -- 2015-02-09 -- UML Class diagram to describe MVC design.
 	\item[OOP MVC Release] -- 2015-02-20 -- Functional OOP MVC version of the software.
-	\item[i18n and a11y] -- 2015-02-24 -- Add internationalisation and accessibility support.
+	\item[i18n and a11y] -- 2015-02-24 -- Add internationalisation support and audit accessibility.
+	\item[Temperature Test] -- Week 4-5 -- Internal/closed functional testing.
+	\item[Temperature Questionnaire] -- Week 6 -- Questionnaire sent out to two departments.
 	\item[Mid-Project Demonstration] -- 2015-03-09 -- Start date of Mid-Project Demonstrations.
+	\item[Analytics/Reports feature] -- 2015-04-17 -- Have the analytics feature finished.
 	\item[Final Report] -- 2015-05-07 -- Final report hand-in.
 	\item[Final Demonstrations] -- 2015-05-11 -- Final project demonstrations.
 \end{description}
@@ -133,7 +133,7 @@ After this, the design of the OOP MVC version of the software can begin as well 
 \nocite{*} % include everything from the bibliography, irrespective of whether it has been referenced.
 
 % the following line is included so that the bibliography is also shown in the table of contents. There is the possibility that this is added to the previous page for the bibliography. To address this, a newline is added so that it appears on the first page for the bibliography. 
-%\newpage
+\newpage
 \addcontentsline{toc}{section}{Initial Annotated Bibliography} 
 
 % example of including an annotated bibliography. The current style is an author date one. If you want to change, comment out the line and uncomment the subsequent line. You should also modify the packages included at the top (see the notes earlier in the file) and then trash your aux files and re-run. 

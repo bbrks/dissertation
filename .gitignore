@@ -1,3 +1,14 @@
+#####
+START
+#####
+
+# Used to store academic papers, etc.
+resources/
+
+###
+END
+###
+
 ## Sublime Text
 # cache files for sublime text
 *.tmlanguage.cache

@@ -1,18 +1,19 @@
 # Todo list
 
 ## OOPMVC Branch
-- [ ] Object Diagram
+- [x] Object Diagram
+- [x] MVC Framework
 - [ ] Test Suite
-- [ ] Refactor Admin Area
-- [ ] Refactor Questionnaire
+- [ ] Implement Questionnaire
+- [ ] Implement Dashboard
 
 ---
 
 ## Codebase Improvements
 
 #### Short term
-- [ ] **Change procedural design to OO MVC** *(this is a huuuge one!)*
-- [ ] Change MySQL and tidy_sql to use PDO
+- [x] **Change procedural design to OO MVC** *(this is a huuuge one!)*
+- [x] Change MySQL and tidy_sql to use PDO
 - [ ] Login functionality - .htaccess w/ LDAP
 - [x] Set up TravisCI for unit tests
 

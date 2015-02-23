@@ -1,11 +1,37 @@
 # Todo list
 
-## OOPMVC Branch
-- [x] Object Diagram
-- [x] MVC Framework
-- [ ] Test Suite
-- [ ] Implement Questionnaire
-- [ ] Implement Dashboard
+- [ ] MVC Framework
+  - [x] Written
+  - [ ] Unit Tested
+  - [ ] On Server
+- [ ] i18n
+  - [x] Written
+  - [x] Unit Tested
+  - [ ] Configurable list of languages to display
+  - [ ] On Server
+- [ ] Questionnaire
+  - [ ] Written
+  - [ ] Unit Tested
+  - [ ] Frontend
+  - [ ] On Server
+- [ ] Dashboard
+  - [ ] Written
+  - [ ] Unit Tested
+  - [ ] Frontend
+  - [ ] On Server
+- [ ] Analytics (stretch)
+  - [ ] Written
+  - [ ] Unit Tested
+  - [ ] Frontend
+  - [ ] On Server
+- [ ] Export (CSV)
+  - [ ] Written
+  - [ ] Unit Tested
+  - [ ] On Server
+- [ ] E-Mail Generation
+  - [ ] Written
+  - [ ] Unit Tested
+  - [ ] On Server
 
 ---
 

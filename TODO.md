@@ -1,5 +1,6 @@
 # Todo list
 
+- [ ] Database Design
 - [ ] MVC Framework
   - [x] Written
   - [ ] Unit Tested
@@ -10,7 +11,8 @@
   - [ ] Configurable list of languages to display
   - [ ] On Server
 - [ ] Questionnaire
-  - [ ] Written
+  - [ ] Pulling Questions
+  - [ ] Storing Answers
   - [ ] Unit Tested
   - [ ] Frontend
   - [ ] On Server

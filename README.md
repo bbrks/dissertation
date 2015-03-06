@@ -1,4 +1,4 @@
-# <img src="http://i.imgur.com/IOfwVzr.png" alt="AWESOME - Aberystwyth Web Evaluation Surveys Of Module Experiences" height="88px" />
+# <img src="http://i.imgur.com/h51t4bA.png" alt="AWESOME - Aberystwyth Web Evaluation Surveys Of Module Experiences" height="88px" />
 Aberystwyth Web Evaluation Surveys Of Module Experiences
 
 AWESOME is a web-based module evaluation questionnaire generator for the monitoring and evaluation of teaching. Undertaken for my Aberystwyth University final year dissertation/major project for CS39440.

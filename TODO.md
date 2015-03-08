@@ -1,6 +1,6 @@
 # Todo list
 
-- [ ] Database Design
+- [x] Database Design
 - [ ] MVC Framework
   - [x] Written
   - [ ] Unit Tested
@@ -11,15 +11,20 @@
   - [ ] Configurable list of languages to display
   - [ ] On Server
 - [ ] Questionnaire
-  - [ ] Pulling Questions
+  - [x] Pulling Questions
   - [ ] Storing Answers
   - [ ] Unit Tested
-  - [ ] Frontend
+  - [x] Frontend
   - [ ] On Server
 - [ ] Dashboard
-  - [ ] Written
+  - [ ] Surveys
+    - [x] Create Survey
+    - [x] Add global questions
+    - [x] Import CSV Data
+    - [ ] Per-module questions
+    - [ ] Send (also locks survey)
   - [ ] Unit Tested
-  - [ ] Frontend
+  - [x] Frontend
   - [ ] On Server
 - [ ] Analytics (stretch)
   - [ ] Written
@@ -42,14 +47,14 @@
 #### Short term
 - [x] **Change procedural design to OO MVC** *(this is a huuuge one!)*
 - [x] Change MySQL and tidy_sql to use PDO
-- [ ] Login functionality - .htaccess w/ LDAP
+- [x] Login functionality - .htaccess
 - [x] Set up TravisCI for unit tests
 
 #### Long term
 - [ ] Polished analytics/reports
-- [ ] extensible i18n system
+- [x] extensible i18n system
 - [ ] accessibility audit
-- [ ] Make database relational *(foreign keys etc)*
+- [x] Make database relational *(foreign keys etc)*
 
 #### Future Considerations
 - [ ] Traffic light module/dept dashboard

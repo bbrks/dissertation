@@ -1,44 +1,58 @@
 # Todo list
 
-- [x] Database Design
-- [ ] MVC Framework
-  - [x] Written
-  - [ ] Unit Tested
-  - [ ] On Server
-- [ ] i18n
-  - [x] Written
-  - [x] Unit Tested
-  - [ ] Configurable list of languages to display
-  - [ ] On Server
-- [ ] Questionnaire
-  - [x] Pulling Questions
-  - [ ] Storing Answers
-  - [ ] Unit Tested
-  - [x] Frontend
-  - [ ] On Server
-- [ ] Dashboard
-  - [ ] Surveys
-    - [x] Create Survey
-    - [x] Add global questions
-    - [x] Import CSV Data
-    - [ ] Per-module questions
-    - [ ] Send (also locks survey)
-  - [ ] Unit Tested
-  - [x] Frontend
-  - [ ] On Server
-- [ ] Analytics (stretch)
-  - [ ] Written
-  - [ ] Unit Tested
-  - [ ] Frontend
-  - [ ] On Server
-- [ ] Export (CSV)
-  - [ ] Written
-  - [ ] Unit Tested
-  - [ ] On Server
-- [ ] E-Mail Generation
-  - [ ] Written
-  - [ ] Unit Tested
-  - [ ] On Server
+## Report
+- [ ] **Feedback on one chapter**
+- [x] LaTeX Template
+- [x] Sectioned
+- [ ] Title Page
+- [ ] Contents
+- [ ] Abstract
+- [ ] **Introduction**
+  - [ ] Background
+  - [ ] Analysis
+- [ ] **Design**
+  - [ ] OOP MVC Framework
+  - [ ] Database Schema
+- [ ] **Implementation**
+- [ ] **Testing**
+  - [ ] Automated Testing (TravisCI)
+  - [ ] User Testing
+- [ ] **Self-Evaluation**
+  - [ ] First person
+  - [ ] Process or method
+  - [ ] Choice of tools, dev environment, etc.
+  - [ ] Using new technology or familiar?
+  - [ ] Stages of project (reqs, design, testing, etc.)
+  - [ ] Blog
+  - [ ] Relevance to degree
+  - [ ] Links to clients/upper management
+  - [ ] Time Management
+  - [ ] if continue work, what direction?
+- [ ] **Bibliography**
+
+## Programming
+- [ ] **Re-implement OOP/MVC or tidy up code a lot!**
+- [ ] Display no. of respondents in unfinished survey
+- [ ] Results tab
+- [ ] Limit survey reminders to only incomplete surveys
+
+- [ ] Linebreak after survey title in view.php
+- [ ] Sending emails REALLY slow - sendmail hangs on hostname lookup (use SMTP)
+
+## Hand-in
+- [ ] Print two copies
+- [ ] Burn disc/Pendrive
+- [ ] Upload to blackboard
+- [ ] Bind two copies
+  - [ ] Buy comb-binding materials
+  - [ ] Self-bind in TP/HO
+  - [ ] Label on spine
+    - [ ] Name
+    - [ ] Project Title
+    - [ ] Degree Scheme
+    - [ ] Date
+- [ ] Hand in
+- [ ] Beer
 
 ---
 
@@ -66,7 +80,33 @@
 
 ---
 
-# Completed
+# Archived
+
+## Programming
+- [x] Add hidden field id question to be able to run update query
+    set null id if new q- [ ] Show student response rate in list
+- [x] Division by zero
+    viewall.php line 47
+- [x] Error on answering question
+    database.php line 58
+- [x] Deploy on server
+- [x] Lighttpd rewrites/Linux case sensitivity fix
+- [x] Change bit to int(1) in schema
+- [x] i18n complete
+- [x] Fix tabs not saving state in URL
+- [x] Include lecturer name hint on question creation page
+- [x] Display an SQL connection error if unsuccessful
+- [x] Delete questions
+- [x] Fix UI on survey view page (status page?)
+# [x] email
+  - [x] title of survey
+  - [x] survey description
+  - [x] msg for tailored survey
+  - [x] email in welsh
+# [x] Remove rewrite dependency
+# [x] repeated module questions
+  - [x] Fix answer IDs
+- [x] replace lecturer variable with lecturer names
 
 ## Outline Project Specification
 - [ ] Tweak LaTeX style file

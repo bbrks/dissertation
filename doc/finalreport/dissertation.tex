@@ -1,53 +1,33 @@
 \documentclass[abstract,a4paper]{scrreprt} %TODO: If printing, add BCOR=3cm,twoside to options
 
-% Fancy Headers and Chapters
-\usepackage{fancyhdr}
-
-% Date Formatting
-\usepackage[UKenglish]{datetime}
-
-% Images
-\usepackage{graphicx}
-\graphicspath{{img/}}
-
-% Colours
-\usepackage[usenames,dvipsnames]{xcolor}
-\definecolor{AberMaroon}{HTML}{952D2E}
-
-% Hyperlinks
-\usepackage[colorlinks, urlcolor=AberMaroon, linkcolor=Black, citecolor=AberMaroon]{hyperref}
-
-% Include List of Tables/Figures/Bibliography in Contents
-\usepackage[nottoc]{tocbibind}
-
-% Add appendix environment
-\usepackage[toc,page]{appendix}
+\input{packages}
 
 \begin{document}
 
 	% Use Roman numerals for preamble pages
 	\pagenumbering{roman}
+
 	\include{cover}
 	\include{declaration}
 	\include{acknowledgements}
 	\include{abstract}
-  
+
 	\tableofcontents
 	\listoftables
 	\listoffigures
-	
+
 	% Use Arabic numerals for main content
 	\clearpage
 	\pagenumbering{arabic}
 	% Use fancy page headings for main content
 	\pagestyle{fancy}
-	
+
 	\include{introduction}
 	\include{design}
 	\include{implementation}
 	\include{testing}
 	\include{evaluation}
-	
+
 	% List all entries regardless of citations
 	\nocite{*}
 	\bibliographystyle{ieeetr}

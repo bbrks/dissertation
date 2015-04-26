@@ -55,7 +55,7 @@
     - [ ] Degree Scheme
     - [ ] Date
 - [ ] Hand in
-- [ ] Beer
+- [ ] **Beer** 🍻🍺
 
 ---
 

@@ -4,12 +4,14 @@
 - [ ] **Feedback on one chapter**
 - [x] LaTeX Template
 - [x] Sectioned
-- [ ] Title Page
-- [ ] Contents
+- [x] Title Page
+- [x] Contents
 - [ ] Abstract
+- [ ] Acknowledgements
 - [ ] **Introduction**
   - [ ] Background
   - [ ] Analysis
+  - [ ] Process
 - [ ] **Design**
   - [ ] OOP MVC Framework
   - [ ] Database Schema
@@ -29,6 +31,7 @@
   - [ ] Time Management
   - [ ] if continue work, what direction?
 - [ ] **Bibliography**
+- [ ] **Appendices**
 
 ## Programming
 - [ ] **Re-implement OOP/MVC or tidy up code a lot!**

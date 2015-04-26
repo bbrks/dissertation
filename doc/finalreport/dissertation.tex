@@ -1,14 +1,36 @@
-\documentclass[twoside, abstract, a4paper, 11pt, parskip=half]{scrreprt}
+\documentclass[abstract,a4paper]{scrreprt} %TODO: If printing, add BCOR=3cm,twoside to options
 
-\subject{Final Report for CS39440 Major Project}
-\title{Extending AWESOME}
-\author{Benjamin Keith Brooks (\href{mailto:beb12@aber.ac.uk}{beb12@aber.ac.uk})}
-\date{\today \\ Version: 0.1 (Draft)}
-\publishers{\textit{Supervisor:} Dr. Hannah Dee
-(\href{mailto:hmd1@aber.ac.uk}{hmd1@aber.ac.uk})}
+% Images
+\usepackage{graphicx}
+\graphicspath{{img/}}
+
+% Hyperlinks
+\usepackage{hyperref}
+
+% Include List of Tables/Figures/Bibliography in Contents
+\usepackage[nottoc]{tocbibind}
 
 \begin{document}
 
-  \maketitle
+	% Use Roman numerals for preamble pages
+	\pagenumbering{roman}
+	\include{cover}
+	\include{declaration}
+	\include{acknowledgements}
+	\include{abstract}
+  
+	\tableofcontents
+	\listoftables
+	\listoffigures
+	
+	% Use Arabic numerals for main content
+	\clearpage
+	\pagenumbering{arabic}
+	
+	\include{introduction}
+	\include{design}
+	\include{implementation}
+	\include{testing}
+	\include{evaluation}
 
 \end{document}

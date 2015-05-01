@@ -1,20 +1,35 @@
-\documentclass[abstract,a4paper]{scrreprt} %TODO: If printing, add BCOR=3cm,twoside to options
+\newif\ifpaper
+%TODO: Uncomment when printing
+\papertrue
+
+\ifpaper
+	\documentclass[BCOR=3cm,twoside,abstract,a4paper]{scrreprt}
+\else
+	\documentclass[abstract,a4paper]{scrreprt}
+\fi
+
 
 \input{packages}
 
 \begin{document}
 
-	% Use Roman numerals for preamble pages
+	% Use Roman numerals for preamble pages and hide them
 	\pagenumbering{roman}
+	\pagestyle{empty}
 
 	\include{cover}
 	\include{declaration}
+
+	% Show page number from this point
+	\pagestyle{plain}
+
 	\include{acknowledgements}
 	\include{abstract}
 
 	\tableofcontents
 	\listoftables
 	\listoffigures
+	\include{acronyms}
 
 	% Use Arabic numerals for main content
 	\clearpage
@@ -28,8 +43,6 @@
 	\include{testing}
 	\include{evaluation}
 
-	% List all entries regardless of citations
-	\nocite{*}
 	\bibliographystyle{ieeetr}
 	\bibliography{bibliography}
 

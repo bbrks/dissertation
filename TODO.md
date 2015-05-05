@@ -7,7 +7,7 @@
 - [x] Title Page
 - [x] Contents
 - [ ] Abstract
-- [ ] Acknowledgements
+- [x] Acknowledgements
 - [ ] **Introduction**
   - [ ] Background
   - [ ] Analysis
@@ -19,6 +19,7 @@
 - [ ] **Testing**
   - [ ] Automated Testing (TravisCI)
   - [ ] User Testing
+  - [ ] Self Testing/Test Tables
 - [ ] **Self-Evaluation**
   - [ ] First person
   - [ ] Process or method
@@ -36,19 +37,14 @@
 ## Programming
 - [ ] **Re-implement OOP/MVC or tidy up code a lot!**
 - [ ] Display no. of respondents in unfinished survey
-- [ ] Results tab
-- [ ] Limit survey reminders to only incomplete surveys
-
-- [ ] Linebreak after survey title in view.php
-- [ ] Sending emails REALLY slow - sendmail hangs on hostname lookup (use SMTP)
 
 ## Hand-in
 - [ ] Print two copies
-- [ ] Burn disc/Pendrive
+- [ ] Burn disc/Pendrive?
 - [ ] Upload to blackboard
 - [ ] Bind two copies
   - [ ] Buy comb-binding materials
-  - [ ] Self-bind in TP/HO
+  - [ ] Self-bind in HO
   - [ ] Label on spine
     - [ ] Name
     - [ ] Project Title
@@ -110,6 +106,9 @@
 # [x] repeated module questions
   - [x] Fix answer IDs
 - [x] replace lecturer variable with lecturer names
+- [x] Results tab
+- [x] Limit survey reminders to only incomplete surveys
+- [x] Sending emails REALLY slow - sendmail hangs on hostname lookup (use SMTP)
 
 ## Outline Project Specification
 - [ ] Tweak LaTeX style file

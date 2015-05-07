@@ -22,7 +22,21 @@
 \usepackage[nottoc]{tocbibind}
 
 % Add appendix environment
-\usepackage[page]{appendix}
+\usepackage[toc]{appendix}
 
 % Acronyms
 \usepackage{acronym}
+
+% Tables
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{rotating}
+
+% Dingbats for \cmark and \xmark
+\usepackage{pifont}
+\newcommand{\OK}{\ding{51}}
+\newcommand{\KO}{\ding{55}}
+
+% Rotate table headers
+\newcommand*\rot{\rotatebox{90}}

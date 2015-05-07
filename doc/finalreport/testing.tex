@@ -1,2 +1,27 @@
 \chapter{Testing}
 	
+	\section{Automated Testing}
+	
+	For this project, a \ac{CI} platform was chosen to be used in order to facilitate automated unit tests.
+	By using \ac{CI} ensured that every time code was committed with unit tests, the suite was ran and results were instantly available.
+	Any test failures resulted in a notification email being sent to identify when and where a problem had occurred.
+	
+	After seeing fellow classmates use TravisCI\footnote{TravisCI Homepage: \url{http://travis-ci.com}} on previous projects, and reviewing the features it provides, I decided to utilise it in this project.
+	Travis offered testing across multiple PHP versions, which proved helpful when trying to provision a server on the university network.
+	
+	This was indispensable mid-way through the project, when functionality in the \ac{i18n} framework needed to be changed and tests started to fail.
+	I wouldn't have noticed any errors when manually testing, but the unit tests brought up edge cases which were then dealt with.
+	
+	\section{User Testing}
+	
+	User testing was carried out by creating a survey and entering volunteer's \ac{AU} usernames in the student \ac{CSV} data along with sample modules.
+	The first real test through the \ac{AU} servers was sent to staff.
+	This uncovered many issues with the setup of \ac{AWESOME} on the \ac{AU} server, which took some time to fix.
+	After these issues were resolved, an end-of-semester questionnaire was sent out to the vast majority of students in the Computer Science department. From first years, to masters students.
+	
+	User testing revealed some useful information via the feedback form, as well as through a question in the survey which was asked about how easy \ac{AWESOME} was to use.
+	
+	\section{Acceptance Testing}
+	
+	Acceptance testing was carried out on the submitted version of \ac{AWESOME} and results in test tables can be found in Appendix \autoref{app:testtables} with 16/18 (89\%) of tests passing.
+	More detail of the two failing tests can be found in the appendix entry.

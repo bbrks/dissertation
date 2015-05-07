@@ -1,10 +1,96 @@
-\chapter{Introduction}
-\newpage
+\chapter{Background \& Objectives}
 
+	\section{Introduction}
+	\label{sec:background}
+	
+	\acf{AWESOME} is a web-based tool that enables departments to generate personalised questionnaires that get sent out to students to gather feedback about modules, lecturers, or even events such as BCS Show \& Tell\footnote{BCS Mid Wales Show \& Tell: \url{http://midwales.bcs.org/show-and-tell-events}} and other talks.
+	
 	\section{Background}
+
+	Departments at Aberystwyth currently have no formalised process of gathering student feedback unlike many other universities.
+	The University of Sussex requires courses to be evaluated through their \ac{MEQ} \cite{meq} which contains seven core quantitative questions and up to ten additional questions at the school-level, module-level or a mixture of both.
+	The University of Westminster have \ac{SME} \cite{sme}, which is an online questionnaire containing ten questions per module sent via e-mail about modules.
+	There are many other similar examples of module evaluation systems across UK universities, with their main features being personalised, anonymised, and incentivising completion.
 	
+	At Aberystwyth, some departments such as Geography \& Earth Science, and English choose to hand out paper-based questionnaires in lectures for each module a student does.
+	Having a student take multiple questionnaires to provide essential feedback can lead to many issues due to survey fatigue.
+	This can significantly reduce response rates and also have an impact on the answers students provide.
+	The Computer Science department has tried many methods of collecting module feedback with varying successes which will be elaborated upon in \autoref{ssec:moduleevaluation}.
+
+	\ac{AWESOME} was originally proposed and developed under the Learning and Teaching Enhancement Fund by Dr. Hannah Dee, and work on the prototype was undertaken by Keiron O'Shea.
+	The project was selected as my dissertation project to extend and implement.
 	
+	Several meetings by the Learning and Teaching Enhancement Committee and Pro-Vice-Chancellor Professor J. Grattan took place to discuss the future of \ac{AWESOME} and the need for a module evaluation system used university-wide and talks are still ongoing.
 	
-	\section{Analysis}
+	\subsection{Module Evaluation Method Analysis}
+	\label{ssec:moduleevaluation}
+
+	There are several important factors to consider when collecting module evaluation feedback.
+	First and foremost, responses must be anonymised, secondly being able to provide incentives for completion drastically increases response rates.
+	Being able to have students complete the survey in their own time, and also send targeted reminders to complete the survey are also important.
+	If reminders are constantly being sent to students who have already completed the survey, they are likely to get frustrated or annoyed and are less likely to notice another survey e-mail.
+	Consolidated surveys help with fatigue, as students only have to answer one survey.
+	There have been several studies on how survey fatigue affects response rates and poor answer quality \cite{citeulike:13579648}.
+	This consolidation only works if the surveys are personalised, as seen from Google Forms response rates in \autoref{tbl:moduleevaluationmethods}, students are lazy, and they will not skip over modules if asked to.
 	
+	\autoref{tbl:moduleevaluationmethods} shows a feature comparison of current methods of module evaluation at Aberystwyth University and corresponding response rates.
 	
+	Paper based module feedback during lecture time can have effective response rates because lecture-time is set aside to complete questionnaires.
+	However students usually have to complete one questionnaire per module which can lead to fatigue very quickly.
+
+	Qwizdom\footnote{Qwizdom Homepage: \url{http://qwizdom.com/higher-education/home}} is a hardware-based voting system, with 'clickers' handed to students in a lecture who can then cast their votes through a powerpoint style questionnaire.
+	Response rates for Qwizdom module evaluations are high for the same reasons as paper based forms.
+	Students are stuck in a lecture for an hour with nothing else to do.
+	One problem Qwizdom does give, is that answers can only be quantitative and not qualitative.
+	Students can't easily input textual comments through Qwizdom so a lot of valuable information is not gathered from students.
+
+	Google Forms has been the standard way of running module evaluation questionnaires for the past few years in CompSci.
+	Google Forms provides anonymous answering in the student's own time and can also provide a way of gathering valuable textual comments.
+	One disadvantage of using Google Forms is that there is no way of knowing which modules a student is enrolled for, so students have to skip over modules that aren't applicable.
+	This makes the survey confusing and error prone at times and response rates suffer as a result.
+		
+	\ac{AWESOME} has been created from the ground-up to address all of these problems.
+	Responses are anonymised, while retaining the ability to see who has, and has not completed the questionnaire yet.
+	This allows for targeted reminders and incentives for completing the survey.
+	Additionally, \ac{AWESOME} imports data directly from \ac{ASTRA} which allows all student, staff, and module data to be easily used without lots of manual data entry.
+	This also allows for personalised surveys, asking questions only relevant to modules a particular student is enrolled for.
+	By collecting both Quantitive and Qualitative data, \ac{AWESOME} can run advanced analytics can be run on the data gathered.
+	The questionnaires sent out are also fully responsive, working on phones to tablets, and to desktop computers by utilising Bootstrap\footnotetext{Bootstrap Homepage: \url{http://getbootstrap.com}} and can be completed at any time by the student.
+	
+	\begin{table}[h]
+		
+		\caption{Module Evaluation methods at Aberystwyth University}
+		\label{tbl:moduleevaluationmethods}
+		
+		\vspace{1em}
+		
+		\begin{tabular*}{\textwidth}{r|ccccccccc|l}
+			\hspace{4em} Method & \rot{Tailored Questions} & \rot{Anonymous} & \rot{Qualitative} & \rot{Quantitative} & \rot{Incentives for completion} & \rot{Completion on own time} & \rot{Targeted reminders} & \rot{Responsive} & \rot{Consolidated} & \rot{Response Rate} \\
+			\midrule
+			Paper         & \KO & \dag & \OK & \ddag & \OK & \KO & -   & -   & \KO & 75\%\cite{qwizdom-student-comprehension} \\
+			Qwizdom       & \KO & \OK  & \KO & \OK   & \OK & \KO & -   & \OK & \KO & 50\%\cite{qwizdom-student-comprehension} \\
+			Google Forms  & \KO & \OK  & \OK & \OK   & \KO & \OK & \KO & \OK & \OK & 20\% \\
+			\acs{AWESOME} & \OK & \OK  & \OK & \OK   & \OK & \OK & \OK & \OK & \OK & TBC  \\
+			\bottomrule
+		\end{tabular*}
+		
+		\vspace{1em}
+		
+		\dag~Anonymity may be compromised when completing paper-based form.
+		
+		\ddag~Manual processing is required in order to analyse the data.
+	\end{table}
+	
+	\section{Objectives}
+	\label{sec:projectobjectives}
+	
+	The overall objective of the project is to implement \ac{AWESOME} on the Aberystwyth University network and collect module feedback for the Computer Science department.
+	
+	This can be broken down into four main aims:
+	
+	\begin{itemize}
+		\item \textbf{Security Audit the \ac{AWESOME} prototype.} This was a large issue, as there were known security flaws with the prototype and it needed to be looked at immediately before any other work took place.
+		\item \textbf{Bring the prototype up to modern development standards.} The program was known to be written in a procedural style, and the security audit brought up the poor \ac{i18n} implementation too.
+		\item \textbf{Finish any incomplete functionality.} Many areas of the prototype were half-implemented, but not fully completed. These had to be done before it was useable by students and staff.
+		\item \textbf{Run \ac{AWESOME} on a departmental server.} The main objective was to get a survey sent out to students and collect real-world data. This is the final step in that process.
+	\end{itemize}

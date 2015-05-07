@@ -15,7 +15,9 @@
 	The programming language choice was fairly fixed, as it had to be easily runnable on an \ac{AU} server.
 	This limited the choice to PHP, but which minor version of PHP was only found out later in the project which is discussed further in \autoref{sec:implementation}.
 	
-	If this requirement wasn't an issue, Ruby on Rails would have been the ideal candidate for this project, as it already provides an \ac{MVC} framework and gems for \ac{i18n}.
+	If this requirement wasn't an issue, Ruby on Rails would have been a great candidate for this project, as it already provides an \ac{MVC} framework, gems for \ac{i18n}, and many other features.
+	
+	\newpage
 	
 	\section{\acl{MVC} Framework}
 	
@@ -26,6 +28,8 @@
 	
 	URL Routing is a way to access specific controllers and views from a URL.
 	This works via an Apache rewrite rule, which appends a \$\_GET variable which contains the current requested URL.
+	
+	The URL routing is handled as such: \textit{awesome.url/controller/view[/query]}
 	
 	\subsection{Directory Structure}
 	
@@ -76,6 +80,21 @@
 	
 	The \ac{i18n} framework is a standalone \ac{OOP} module which utilises JSON formatted files with strings for translation.
 	
+	The JSON files are structured like the one below. The first two entries are \ac{i18n} metadata, for ISO639-1 code\footnote{ISO639-1: \url{http://en.wikipedia.org/wiki/ISO_639-1}}, and language.
+	Each string has an ID, and a translation string to be returned.
+	Every language uses the same ID, and what gets returned depends on the language set via a global variable.
+	
+	\begin{verbatim}
+{
+    "@ISO639-1" : "en",
+    "@lang" : "English",
+    "invalid-url" : "The URL provided is incorrect.",
+    "send-responses" : "Send Responses"
+}
+	\end{verbatim}
+	
+	The \ac{i18n} class has a global function, \_\_(\$string\_id) which will then return the appropriate translated string depending on the \$lang global variable.
+	
 	\section{Database Schema}
 	
 	The database schema (see \autoref{fig:schema}) used is very similar to the prototype version.
@@ -92,8 +111,7 @@
 	Additional changes need to be made in order for \ac{AWESOME} to support multiple departments across the university, but this is out of the scope of the dissertation, although this feature is on the roadmap if \ac{AWESOME} is to be used university-wide.
 	
 	\begin{figure}[H]
-		\hspace{-0.165\textwidth}
-		\includegraphics[width=1.33\textwidth]{schema}
+		\includegraphics[width=\textwidth]{schema}
 		\caption{\ac{AWESOME} database schema design.}
 		\label{fig:schema}
 	\end{figure}
@@ -102,7 +120,7 @@
 	
 	The user interface was fairly good on the questionnaire-side in the prototype, so a lot of elements were re-used in that, with a few minor changes.
 	
-	\autoref{fig:questionnaire-comparison} shows a comparison between the prototype version and the submitted version of \ac{AWESOME}.
+	\autoref{fig:questionnaire-comparison} to \autoref{fig:respondents-comparison} shows a comparison between the prototype version and the submitted version of \ac{AWESOME}.
 	
 	\begin{figure}[H]
 		\includegraphics[width=\textwidth]{screens/prototype-questionnaire}
@@ -143,7 +161,7 @@
 		\label{fig:respondents-comparison}
 	\end{figure}
 	
-	Additional features include a feedback form when \ac{AWESOME} is in debug mode.
+	Additional features include a feedback form (\autoref{fig:feedbackform}) when \ac{AWESOME} is in debug mode.
 	This allows users to send an email to developers, containing any text they wish, as well as automatically including user-agent and other metadata to help identify the problem.
 	
 	\begin{figure}[H]
@@ -152,3 +170,14 @@
 		\label{fig:feedbackform}
 	\end{figure}
 	
+	\begin{figure}[H]
+		\includegraphics[width=\textwidth]{screens/final-about}
+		\caption{A screenshot of the about dialog in \acs{AWESOME}}
+		\label{fig:aboutpage}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering \includegraphics[width=0.33\textwidth]{screens/i18n-selector}
+		\caption{A screenshot of the \ac{i18n} selector in \acs{AWESOME}}
+		\label{fig:i18nselector}
+	\end{figure}

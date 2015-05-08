@@ -6,33 +6,54 @@
 - [x] Sectioned
 - [x] Title Page
 - [x] Contents
-- [ ] Abstract
+- [x] Abstract
 - [x] Acknowledgements
-- [ ] **Introduction**
-  - [ ] Background
-  - [ ] Analysis
-  - [ ] Process
-- [ ] **Design**
-  - [ ] OOP MVC Framework
-  - [ ] Database Schema
-- [ ] **Implementation**
-- [ ] **Testing**
-  - [ ] Automated Testing (TravisCI)
-  - [ ] User Testing
-  - [ ] Self Testing/Test Tables
-- [ ] **Self-Evaluation**
-  - [ ] First person
-  - [ ] Process or method
-  - [ ] Choice of tools, dev environment, etc.
-  - [ ] Using new technology or familiar?
-  - [ ] Stages of project (reqs, design, testing, etc.)
-  - [ ] Blog
-  - [ ] Relevance to degree
-  - [ ] Links to clients/upper management
-  - [ ] Time Management
-  - [ ] if continue work, what direction?
-- [ ] **Bibliography**
-- [ ] **Appendices**
+- [x] **Background & Objectives**
+  - [x] Introduction
+  - [x] Background
+    - [x] Module Evaluation Method Analysis
+  - [x] Objectives
+- [x] **Requirements**
+  - [x] Features
+  - [x] Development Practices
+  - [x] User Roes
+    - [x] Use Cases
+- [x] **Design**
+  - [x] Programming Language
+  - [x] MVC Framework
+    - [x] Routing
+    - [x] Directory Structure
+  - [x] Internationalisation Framework
+  - [x] Database Schema
+  - [x] User Interface
+- [x] **Implementation**
+  - [x] Prerequisites
+    - [x] Third-party services
+    - [x] Open Source License
+    - [x] Development Environment
+  - [x] Security Audit and Code Review
+  - [x] MVC Framework
+  - [x] i18n Framework
+  - [x] Deploying on AU Server
+- [x] **Testing**
+  - [x] Automated Testing (TravisCI)
+  - [x] User Testing
+  - [x] Acceptance Testing
+- [x] **Self-Evaluation**
+  - [x] Objectives and Requirements
+    - [x] Objectives
+    - [x] Requirements
+  - [x] Development Environment
+  - [x] Choice of language and framework
+  - [x] Blog
+  - [x] Relevance to degree
+  - [x] Links to clients
+  - [x] Time Management
+  - [x] Future Improvements
+- [x] **Bibliography**
+- [x] **Appendices**
+  - [x] Outline Project Spec
+  - [x] Test Tables
 
 ## Programming
 - [ ] **Re-implement OOP/MVC or tidy up code a lot!**
@@ -45,11 +66,11 @@
 - [ ] Bind two copies
   - [ ] Buy comb-binding materials
   - [ ] Self-bind in HO
-  - [ ] Label on spine
-    - [ ] Name
-    - [ ] Project Title
-    - [ ] Degree Scheme
-    - [ ] Date
+  - [x] Label on spine
+    - [x] Name
+    - [x] Project Title
+    - [x] Degree Scheme
+    - [x] Date
 - [ ] Hand in
 - [ ] **Beer** 🍻🍺
 

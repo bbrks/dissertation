@@ -1,12 +1,13 @@
 \chapter{Testing}
 	
 	\section{Automated Testing}
+	\label{sec:automatedtesting}
 	
 	For this project, a \ac{CI} platform was chosen to be used in order to facilitate automated unit tests.
 	By using \ac{CI} ensured that every time code was committed with unit tests, the suite was ran and results were instantly available.
 	Any test failures resulted in a notification email being sent to identify when and where a problem had occurred.
 	
-	After seeing fellow classmates use TravisCI\footnote{TravisCI Homepage: \url{http://travis-ci.com}} on previous projects, and reviewing the features it provides, I decided to utilise it in this project.
+	After seeing fellow classmates use TravisCI on previous projects, and reviewing the features it provides, I decided to utilise it in this project.
 	Travis offered testing across multiple PHP versions, which proved helpful when trying to provision a server on the university network.
 	
 	This was indispensable mid-way through the project, when functionality in the \ac{i18n} framework needed to be changed and tests started to fail.

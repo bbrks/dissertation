@@ -5,6 +5,9 @@
 	
 	\acf{AWESOME} is a web-based tool that enables departments to generate personalised questionnaires that get sent out to students to gather feedback about modules, lecturers, or even events such as BCS Show \& Tell\footnote{BCS Mid Wales Show \& Tell: \url{http://midwales.bcs.org/show-and-tell-events}} and other talks.
 	
+	By tailoring questionnaires to individual students, only asking relevant questions, and being able to target students who have yet to complete a survey to send out reminder emails, we can increase the response rate and quality of answers when gathering student module feedback.
+	\ac{AWESOME} aims to solve the problems with existing module evaluation methods, and to improve student response rates to gather accurate module evaluation data.
+	
 	\section{Background}
 
 	Departments at Aberystwyth currently have no formalised process of gathering student feedback unlike many other universities.
@@ -15,12 +18,13 @@
 	At Aberystwyth, some departments such as Geography \& Earth Science, and English choose to hand out paper-based questionnaires in lectures for each module a student does.
 	Having a student take multiple questionnaires to provide essential feedback can lead to many issues due to survey fatigue.
 	This can significantly reduce response rates and also have an impact on the answers students provide.
+	
 	The Computer Science department has tried many methods of collecting module feedback with varying successes which will be elaborated upon in \autoref{ssec:moduleevaluation}.
 
 	\ac{AWESOME} was originally proposed and developed under the Learning and Teaching Enhancement Fund by Dr. Hannah Dee, and work on the prototype was undertaken by Keiron O'Shea.
 	The project was selected as my dissertation project to extend and implement.
 	
-	Several meetings by the Learning and Teaching Enhancement Committee and Pro-Vice-Chancellor Professor J. Grattan took place to discuss the future of \ac{AWESOME} and the need for a module evaluation system used university-wide and talks are still ongoing.
+	Several meetings by the Learning and Teaching Enhancement Committee and Pro-Vice-Chancellor Professor J. Grattan took place to discuss the future of \ac{AWESOME} and the need for a centralised module evaluation system used university-wide, and talks are still ongoing to investigate this.
 	
 	\subsection{Module Evaluation Method Analysis}
 	\label{ssec:moduleevaluation}
@@ -29,20 +33,24 @@
 	First and foremost, responses must be anonymised, secondly being able to provide incentives for completion drastically increases response rates.
 	Being able to have students complete the survey in their own time, and also send targeted reminders to complete the survey are also important.
 	If reminders are constantly being sent to students who have already completed the survey, they are likely to get frustrated or annoyed and are less likely to notice another survey e-mail.
+	
 	Consolidated surveys help with fatigue, as students only have to answer one survey.
 	There have been several studies on how survey fatigue affects response rates and poor answer quality \cite{citeulike:13579648}.
-	This consolidation only works if the surveys are personalised, as seen from Google Forms response rates in \autoref{tbl:moduleevaluationmethods}, students are lazy, and they will not skip over modules if asked to.
+	This consolidation only works if the surveys are personalised, as seen from Google Forms response rates in \autoref{tbl:moduleevaluationmethods}, students are lazy, and they will not skip over modules if asked to and will significantly drop response rates.
 	
 	\autoref{tbl:moduleevaluationmethods} shows a feature comparison of current methods of module evaluation at Aberystwyth University and corresponding response rates.
+	\ac{AWESOME} aims to solve the problems with existing module evaluation methods and to improve student response rates to gather accurate module evaluation data.
 	
 	Paper based module feedback during lecture time can have effective response rates because lecture-time is set aside to complete questionnaires.
 	However students usually have to complete one questionnaire per module which can lead to fatigue very quickly.
+	
+	\newpage
 
 	Qwizdom\footnote{Qwizdom Homepage: \url{http://qwizdom.com/higher-education/home}} is a hardware-based voting system, with 'clickers' handed to students in a lecture who can then cast their votes through a powerpoint style questionnaire.
 	Response rates for Qwizdom module evaluations are high for the same reasons as paper based forms.
 	Students are stuck in a lecture for an hour with nothing else to do.
 	One problem Qwizdom does give, is that answers can only be quantitative and not qualitative.
-	Students can't easily input textual comments through Qwizdom so a lot of valuable information is not gathered from students.
+	Students can't easily input textual comments through Qwizdom so some of the most valuable information is not gathered from students.
 
 	Google Forms has been the standard way of running module evaluation questionnaires for the past few years in CompSci.
 	Google Forms provides anonymous answering in the student's own time and can also provide a way of gathering valuable textual comments.
@@ -75,20 +83,20 @@
 		
 		\dag~Anonymity may be compromised when completing paper-based form.
 		
+		\ddag~Manual processing is required in order to analyse the data.
+		
 		\vspace{1em}
 		
 		\caption{Module Evaluation methods at Aberystwyth University}
 		\label{tbl:moduleevaluationmethods}
-		
-		\ddag~Manual processing is required in order to analyse the data.
 	\end{table}
 	
 	\section{Objectives}
 	\label{sec:projectobjectives}
 	
-	The overall objective of the project is to implement \ac{AWESOME} on the Aberystwyth University network and collect module evaluation feedback for the Computer Science department in both short mid-term, pre-\ac{SSCC} questionnaires and comprehensive end-of-semester questionnaires.
+	The overall objective of the project is to implement \ac{AWESOME} on the \ac{AU} network and collect module evaluation feedback for the Computer Science department in both short mid-term, pre-\ac{SSCC} questionnaires and full end-of-semester questionnaires.
 	
-	This can be broken down into four main aims:
+	This can be broken down into four main aims to tackle:
 	
 	\begin{itemize}
 		\item \textbf{Security Audit the \ac{AWESOME} prototype.} This was a large issue, as there were known security flaws with the prototype and it needed to be looked at immediately before any other work took place.

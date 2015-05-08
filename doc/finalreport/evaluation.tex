@@ -1,18 +1,93 @@
 \chapter{Evaluation}
+
+	\section{Were the objectives and requirements met?}
 	
-	\section{Process}
+	\subsection{Objectives}
+	
+	The objectives listed in \autoref{sec:projectobjectives} are listed below. All of which have been met, with the exception of the second one, for reasons listed below.
+	
+	\begin{itemize}
+		\item \OK - \textbf{Security Audit the \ac{AWESOME} prototype.} Prototype audited and code reviewed. Aggressive refactoring eliminated issues.
+		\item \textbf{?} - \textbf{Bring the prototype up to modern development standards.} An \ac{MVC} and \ac{i18n} framework were written and used, but to get it working on the \ac{AU} server, the \ac{MVC} framework had to be largely torn apart.
+		\item \OK - \textbf{Finish any incomplete functionality.} The program is in a usable state, and has already been used to collect module evaluation data. Future extensions are listed in \autoref{sec:futurescope}.
+		\item \OK - \textbf{Run \ac{AWESOME} on a departmental server.} \ac{AWESOME} was run on a departmental server and ran surveys for 504 Computer Science students.
+	\end{itemize}
+	
+	\subsection{Requirements}
+	
+	The requirements listed in \autoref{sec:features}
+	
+	\begin{itemize}
+		\item \OK - \textbf{Automatic questionnaire generation per-student}
+		\item \OK - \textbf{The ability to generate quick mid-term questionnaires}
+		\item \OK - \textbf{No need to type in registration details}
+		\item \OK - \textbf{Targeted follow-up reminder emails}
+		\item \OK - \textbf{Anonymous responses}
+		\item \KO - \textbf{Visually appealing analytics} - Results are available with graphs on Likert Scale questions, and textual comments can be read, but advanced reports and analytics are not available.
+	\end{itemize}
 	
 	\section{Development Environment}
 	
-	\section{Project Stages}
+	Having a different development environment than the server it was being deployed on was a mistake that cost a lot of time, a lot of wasted effort, and even undid a lot of progress made with \ac{AWESOME}.
 	
+	It took a long time to get access to a university server, and even then it was sub-optimal, as I had to jump through hoops to get things updated.
+	
+	Additionally, I was disappointed that the university server was only accessible either on the Aber network or through the Aber VPN.
+	I think this drastically affected my response rates when sending out surveys, and although it matched the previous response rates of 20\%, I feel it could have been higher, even up to 50\% response rate, which would have been a huge success for \ac{AWESOME}.
+	
+	\section{Choice of language and framework}
+	
+	I feel that PHP may have been the correct choice in language, given that Ruby is a lot harder to deploy on most servers.
+	Especially if \ac{AWESOME} is destined for wider use than a single department.
+	
+	With regards to framework, I feel as though a large chunk of my time was spent writing my own framework, which turned out pale in comparison with a mature framework such as Laravel.
+	Having said that though, I do question whether MVC was even the correct choice for this project.
+	There is only ever going to be one view for a respondent, and that is a questionnaire with questions in it.
+	For the admin dashboard, things do get a little more complicated, but in essence, you are creating, viewing, deleting or editing a survey.
+	That is one item, and I don't think that \ac{MVC} really suits this situation.
+		
 	\section{Blog}
+	
+	I used a development blog greatly to my advantage during this project.
+	It was mainly used as a personal diary to help me remember things whilst writing this report, but it also served as a means of communication between my supervisor and me.
 	
 	\section{Degree}
 	
+	Working on \ac{AWESOME} has been very relevant to my degree, G401, as it has made me tackle a significant amount of work, not only from scratch, but also taking over an existing one and making informed decisions on the best course of action.
+	
 	\section{Upper Management}
+	
+	Throughout the project, I have had meetings with the university management, and Professor J. Grattan to discuss the potential to use \ac{AWESOME} on a university-wide scale.
+	Everybody I talked to seemed to be impressed with the software, and what it could bring over existing methods of module evaluation.
+	
+	About mid-way through the project, it came to light that \ac{IS} had been working on a similar project too, through Blackboard.
+	Theirs tied in to the university systems much better than \ac{AWESOME} for obvious reasons, but focus on usability was certainly lacking in their prototype compared to \ac{AWESOME}.
+	
+	Discussions between the two systems are still ongoing, but I do believe that \ac{AWESOME} is the superior system, especially after some of the improvements and extensions mentioned in \autoref{sec:futurescope} have been carried out.
 	
 	\section{Time Management}
 	
-	\section{Future Scope}
+	I feel as though I wasted a lot of time writing the \ac{MVC} framework for it to pretty much not be used. I think if the time I spent on writing the \ac{MVC} framework was put elsewhere, I could have achieved a lot more a lot sooner and may have had the time to get a decent server set up to allow for access without the \ac{VPN}.
+	This would have improved response rates and I could have added some of the things listed in \autoref{sec:futurescope}.
+	
+	If I were to take on this project again, I would either choose to go without a framework, just writing nice \ac{OOP} code, or pick an existing and mature framework, such as Laravel.
+	
+	\section{Future Improvements}
+	\label{sec:futurescope}
+	
+	There is plenty of future improvements to be worked on for \ac{AWESOME}.
+	\ac{AWESOME}'s open source nature means that anybody can pick up the project and improve it, and the university upper-management have expressed keen interest in getting \ac{AWESOME} implemented university-wide as a solution to student module evaluation.
+	
+	Below are a small number of areas that could either be improved or added to \ac{AWESOME} to make it a great piece of software that could be used university-wide to collect student module evaluation.
+	
+	\begin{itemize}
+		\item \textbf{Complete Unit Test Suites} - Due to many time constraints in the project, unfortunately only the \ac{i18n} framework is unit tested. By adding test suites to the \ac{MVC} framework, as well as other areas of \ac{AWESOME}, it allows for developers to easily refactor code without breaking stuff.
+		\item \textbf{Re-implement \ac{MVC} framework} - Due to the trouble faced with the \ac{AU} server, most of the \ac{MVC} framework had to be stripped back and little of it is currently used. Re-implementing this would greatly benefit codebase readability.
+		\item \textbf{Add better CSV input validation} - Currently CSV imports only get rejected if the fields are empty. Some simple regular expressions could be made to check that the formatting of the CSV files are correct before sending any data.
+		\item \textbf{Add more question types} - Currently, only two text-type questions exist, and one Likert Scale rating\footnote{Likert Scale is a question-type which has the answers `Strongly Disagree', `Disagree', `Neutral', `Agree', `Strongly Agree'}
+		\item \textbf{Add advanced results analytics} - Being able to select only certain responses can be a valuable tool to have. For example, return all textual comments for modules with a low rating, and have the word `feedback' in the text.
+		\item \textbf{Extend \ac{AWESOME} to be multi-departmental} - Currently, \ac{AWESOME} is only really suited to one department, however it could easily be extended to provide questionnaires for multiple departments.
+		\item \textbf{University-management overview} - This was brought up in discussions with university management. They want to be able to see a list of all modules, with a rating of how well they are doing. This can be achieved by taking a mean of each module rating and displaying in a traffic light format.
+		\item \textbf{Pre-set Question Bank} - Having a set of pre-defined questions really speeds up the creation of questionnaires. This could be an addition which would be valuable, as it drastically reduces the amount of textual input when adding questions.
+	\end{itemize}
 	

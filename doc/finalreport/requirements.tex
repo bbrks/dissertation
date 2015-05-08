@@ -1,6 +1,7 @@
 \chapter{Requirements}
 
 	\section{Features}
+	\label{sec:features}
 	
 	The following feature list is the one proposed for the \ac{AWESOME} prototype.
 	The project follows this feature set as a baseline set of requirements.
@@ -33,24 +34,26 @@
 	
 	\subsubsection{Admin User Role}
 	
+	As seen in \autoref{fig:use_case-admin}, admins can view surveys, create surveys, add questions to surveys, view more detail about survey such as respondents, response rate, modules, and results.
+	They can also send an email to respondents to remind them to fill in the questionnaire.
+
+	
 	\begin{figure}[H]
 		\includegraphics[width=\textwidth]{use_case-admin}
 		\caption{Admin use-case diagram.}
 		\label{fig:use_case-admin}
 	\end{figure}
-	
-	\autoref{fig:use_case-admin} shows that admins can view surveys, create surveys, add questions to surveys, view more detail about survey such as respondents, response rate, modules, and results.
-	They can also send an email to respondents to remind them to fill in the questionnaire.
-	
+		
 	\newpage
 	
 	\subsubsection{Respondent User Role}
 	
-	\begin{figure}[H]
-		\label{fig:use_case-student}
-		\includegraphics[width=\textwidth]{use_case-respondent}
-		\caption{Respondent use-case diagram.}
-	\end{figure}
-	
 	\autoref{fig:use_case-student} shows that a respondent only has one responsibility in the system, and that is to respond to a survey through a link sent via email.
 	They can only respond once, and submitted answers cannot be seen as it would break the irreversible anonymity of the system.
+	If debug mode is enabled, respondents can also fill in a feedback form about \ac{AWESOME} which gets sent to developers.
+	
+	\begin{figure}[H]
+		\includegraphics[width=\textwidth]{use_case-respondent}
+		\caption{Respondent use-case diagram.}
+		\label{fig:use_case-student}
+	\end{figure}
